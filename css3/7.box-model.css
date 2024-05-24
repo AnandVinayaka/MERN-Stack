@@ -1,0 +1,16 @@
+/* box styles */
+.box {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top, #eee, #aaa);
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,53 @@
+.box {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.box-item {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: lightgrey;
+    text-align: center;
+    line-height: 200px;
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    position: absolute;
+}
+
+.box-item-1 {
+    border: 1px solid #641E16;
+    background-color: #F9EBEA;
+    color: #C0392B;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.box-item-2 {
+    border: 1px solid #145A32;
+    background-color: #E9F7EF;
+    color: #C0392B;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.box-item-3 {
+    border: 1px solid #1B4F72;
+    background-color: #EAF2F8;
+    color: #C0392B;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+
+/* ............................. */

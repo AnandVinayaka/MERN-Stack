@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(333,222,111);
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: greenyellow;
+}
+
+p {
+    line-height: 32px;
+    color: #3a3;
+}
+
+li {
+    line-height: 32px;
+    color: lightcoral;
+}

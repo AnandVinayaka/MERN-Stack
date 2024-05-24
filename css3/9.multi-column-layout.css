@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* container styles */
+.container {
+    display: flex; /* use flex to arrange columns */
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    flex-basis: 30%; /* set initial width of each column */
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #000000
+}
+
+/* media queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* display colmns in a single column on small screens */
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}

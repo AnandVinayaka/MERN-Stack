@@ -1,0 +1,16 @@
+.first-container{
+    background-color: lawngreen;
+}
+
+.second-container{
+    background-color: lightseagreen;
+}
+
+.heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline;
+}
+
+.paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+}

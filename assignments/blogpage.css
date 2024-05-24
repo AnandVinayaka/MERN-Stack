@@ -1,0 +1,187 @@
+body{
+    background-color: rgb(144, 221, 221);
+} 
+.page-container{
+    width: 100%;
+    justify-content: center;
+}
+.header{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    height:auto;
+}
+
+.header-content{
+    display: flex;
+}
+
+.bricks-logo{
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    max-width:150px;
+    border: 10px solid rgb(144, 221, 221);
+
+}
+
+.name-tagline{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    padding-left: 25px;
+}
+
+.header-head{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    margin-top: 15%;
+}
+
+.header-nav{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    display: flex;
+    line-height: 185px;
+    padding-left: 15%;
+}
+
+#home{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner{
+    margin-left: 40%;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.owner-name{
+margin-left: 37%;
+}
+
+.home-images{
+    margin-left: 13%;
+}
+
+.image{
+    border-radius: 10px;
+    height: 170px;
+    width: 200px;
+    border: 10px solid rgb(144, 221, 221);
+}
+
+
+#aboutUs{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.about-details{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#prices{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    display: flex;
+    padding: 20px;
+}
+
+.price-boxes{
+    margin-left: 10%;
+
+}
+
+.price-box{
+    display: flex;
+    margin: 10px;
+}
+
+.prices-image{
+    height: 170px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#ingredients{
+    background-color:rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    display: flex;
+    padding: 20px;
+}
+
+.ingredient{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    background-color: rgb(144, 221, 221);
+    box-sizing: border-box
+}
+
+.ingredient-img{
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#location{
+    background-color:rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contactUs-main{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+
+#contactUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+}
+
+#footer{
+    background-color: rgb(67, 141, 140);
+    margin:0 auto;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

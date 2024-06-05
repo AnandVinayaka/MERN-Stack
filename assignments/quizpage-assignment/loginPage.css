@@ -1,0 +1,119 @@
+body{
+    margin:0 auto;
+    padding:0px;
+    width:992px;
+    height:100vh;
+    font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #393948;
+    color: white;
+}
+
+.logo{
+    font-size:28px;
+    width:100%;
+    border-radius: 8px;
+    margin-top:15px;
+    padding:8px;
+}
+
+.logo:hover{
+    color: lightgreen;
+}
+
+.container{
+    display: flex;
+}
+
+.imge_leftside{
+    width:220px;
+    border-radius: 8px;
+    margin-top:90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.loginDetails_rightside{
+    width: 550px;
+    margin-top: 110px;
+    margin-left:20px;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) */
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+
+button {
+    width:100%;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color:green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(60, 250, 60);
+}
+
+.btn_1 > button{
+    padding: 8px 8px;
+    background-color:rgb(131, 139, 200);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn_1 > button:hover {
+    background-color: #FDB095;
+}
+
+.main_navigation{
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation_barLeft{
+    display: flex;
+    justify-content: flex-start;
+    font-size:28px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+
+.navigation_barRight{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+}

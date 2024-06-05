@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    width:992px;
+    margin:0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:"Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #393948;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container {
+    /* background-color:cadetblue; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid aliceblue; */
+    /* flex-direction: row; */
+}
+
+.imge_illustrator {
+    flex: 1;
+    
+}
+
+.imge_illustrator img {
+    width: 320px;
+    height:auto;
+}
+
+
+.signUp_details {
+    flex:1;
+    padding-left: 30px;
+}
+
+.from_details {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight:bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color:green;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(60, 250, 60);
+}

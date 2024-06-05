@@ -1,0 +1,79 @@
+body{
+    margin: 0px auto;
+    padding:0px;
+    width: 992px;
+    font-family:"Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    min-height:100vh;
+    /* background-color: #ff416c; */
+    /* background-color: #210440; */
+    background-color: #393948;
+
+}
+.heading{
+    text-align: center;
+    font-size:24px;
+    color:white;
+}
+.heading >p{
+    font-size:20px;
+}
+
+.image >img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px; 
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.illustrator >img {
+    width:500px; 
+    height: auto;
+}
+
+.main_navigation{
+    /* background-color:#FDB095; */
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigation_barLeft{
+    display: flex;
+    justify-content: flex-start;
+    font-size:28px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+}
+.navigation_barLeft >:hover{
+    color:lightgreen;
+}
+
+.navigation_barRight{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+}
+
+  .btn_1 > button{
+    padding: 8px 8px;
+    background-color:rgb(131, 139, 200);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn_1 > button:hover {
+    background-color: #FDB095;
+}

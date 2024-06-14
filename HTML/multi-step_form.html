@@ -1,0 +1,179 @@
+<!-- 
+ ### Assignment 2: Multi-Step Form with Progress Bar
+
+Objective:
+Create a multi-step form that includes a progress bar to indicate the user's progress through the form.
+
+Requirements:
+1. Form Steps:
+   - Step 1: Personal Information (Name, Email, Phone)
+   - Step 2: Address Information (Address Line 1, Address Line 2, City, State, ZIP Code)
+   - Step 3: Account Information (Username, Password, Confirm Password)
+   - Step 4: Confirmation
+
+2. HTML5 Features:
+   - Use `fieldset` and `legend` to group related elements.
+   - Use `type="email"` for email input.
+   - Use `type="tel"` for phone input with a pattern for validation.
+   - Use the `required` attribute for all mandatory fields.
+   - Use `input` elements with the `type="text"` for address fields.
+
+3. CSS3 Features:
+   - Implement a horizontal progress bar that updates as the user moves through the steps.
+   - Use transitions to animate the progress bar.
+   - Style the form steps using flexbox or grid for alignment.
+   - Create a visually appealing design with hover and focus effects.
+   - Implement media queries to ensure the form is responsive. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgba(174, 218, 236, 0.892);
+        font-family: Helvetica;
+        font-size: 1em;
+      }
+
+      fieldset {
+        border-radius: 3px;
+        border: 4px rgb(123, 185, 187) solid;
+      }
+
+      legend {
+        font-size: 1.25em;
+        font-weight: bold;
+      }
+
+      label {
+        font-weight: 500;
+        padding: 5px;
+      }
+
+      form {
+        font-weight: lighter;
+        display: flex;
+        padding: 10px;
+      }
+
+      input {
+        border-color: rgb(123, 185, 187);
+        border-radius: 3px;
+        height: 25px;
+        width: 125px;
+      }
+
+      input:hover {
+        font-size: 1.1em;
+      }
+
+      input:focus {
+        background-color: rgba(211, 211, 211, 0.237);
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <br />
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required />
+        <br />
+        <br />
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="/^[0-9]$"
+          maxlength="10"
+          required />
+        <br />
+        <br />
+        <input type="checkbox" id="Submit1" />
+      </form>
+    </fieldset>
+    <br />
+    <br />
+    <fieldset>
+      <legend>Address Information</legend>
+      <form>
+        <label for="address1">Address Line 1:</label>
+        <input type="text" id="address1" name="address1" required />
+        <br />
+        <br />
+        <label for="address2">Address Line 2:</label>
+        <input type="text" id="address2" name="address2" required />
+        <br />
+        <br />
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+        <br />
+        <br />
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required />
+        <br />
+        <br />
+        <label for="zipcode">Zip code:</label>
+        <input type="text" id="zipcode" name="zipcode" required />
+        <br />
+        <br />
+        <input type="checkbox" id="Submit2" />
+      </form>
+    </fieldset>
+    <br />
+    <br />
+    <fieldset>
+      <legend>Account Information</legend>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+        <br />
+        <label for="passwordkey">Password:</label>
+        <input type="password" id="passwordkey" name="password" required />
+        <br />
+        <br />
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required />
+        <br />
+        <br />
+        <input type="checkbox" id="Submit3" />
+      </form>
+    </fieldset>
+
+    <div>
+      <h3>Progress bar</h3>
+      <div
+        style="
+          width: 30%;
+          border: 2px solid rgb(123, 185, 187);
+          border-radius: 5px;
+        ">
+        <div
+          id="pbarPercent"
+          style="
+            width: 0%;
+            height: 30px;
+            background-color: rgb(107, 161, 163);
+            transition: width 0.3s ease;
+            text-align: center;
+          "></div>
+      </div>
+    </div>
+
+    <script src="multi-step_form.js"></script>
+  </body>
+</html>

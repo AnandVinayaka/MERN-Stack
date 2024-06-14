@@ -1,0 +1,25 @@
+body{
+    width: 800px;
+    margin: auto;
+    margin-top: 10%;
+    background-color: rgb(87, 37, 2);
+}
+
+.grid-container{
+    background-color: chocolate;
+    display: grid; /* creates a grid container */
+    grid-template-columns: auto auto auto; /* sets the number of columns automatically and specifies the width of items*/
+    border: 15px solid rgb(123, 53, 3);
+    /* column-gap: 50px; */ /* creates gaps between columns*/
+    /* row-gap: 50px; */ /* creates gaps between rows*/
+    /* gap: 25px 25px; */ /* creates gaps between row and columns*/  
+}
+
+.grid-container > div{
+    padding: 15px;
+    border: 3px solid rgb(123, 53, 3);
+    text-align: center;
+    color: rgb(230, 212, 192);
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

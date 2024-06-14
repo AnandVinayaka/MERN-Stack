@@ -1,0 +1,48 @@
+<!-- 
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the 'style' attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--INTERNAL STYLING-->
+    <style>
+      p {
+        color: green;
+        background-color: rgb(1, 35, 1);
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: x-large;
+      }
+    </style>
+
+    <!--EXTERNAL STYLING-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--INLILNE STYLING-->
+    <h1
+      style="
+        background-color: blue;
+        font-size: large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+      ">
+      Paragraph
+    </h1>
+    <h2>External styling paragraph</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+      molestiae mollitia saepe officiis aperiam totam ratione explicabo sequi.
+      Vel, saepe soluta doloribus aspernatur quia quod pariatur deserunt nisi.
+      Atque, nulla!
+    </p>
+  </body>
+</html>

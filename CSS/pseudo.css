@@ -1,0 +1,26 @@
+body{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(254, 16, 16);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(8, 244, 8);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(245, 8, 126);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(8, 8, 239);
+  }

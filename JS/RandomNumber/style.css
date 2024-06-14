@@ -1,0 +1,20 @@
+body{
+    display: block;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 2em;
+}
+
+#myButton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    background-color: rgb(219, 76, 76);
+    transition: background-color 0.25;
+}
+
+#myButton:hover{
+    background-color: rgb(165, 42, 42);
+}
+

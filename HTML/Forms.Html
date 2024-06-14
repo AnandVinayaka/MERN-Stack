@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>USER DETAILS:</h1>
+    <form>
+      <!-- <form> element is used to create an HTML form for user input -->
+      <label for="fname">First name:</label>
+      <!--'for' attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. 
+        watch the id attribute value below for input element -->
+      <input type="text" id="fname" name="fname" value="Anand" />
+      <!-- 
+      'value' will display in the input element like if we want to set the name starting with Anand then we can keep Anand as value.
+
+      'name' this will specify the name of an <input> element, here we are creating this inpt element for First name so in short form we kept fname.
+      
+      There are some other input types
+      <input type="text">	Displays a single-line text input field
+      <input type="radio">	Displays a radio button (for selecting one)
+      <input type="checkbox">	Displays a checkbox (for selecting zero or more)
+      <input type="submit">	Displays a submit button (for submitting the form)
+      <input type="button">	Displays a clickable button 
+      -->
+      <br />
+      <br />
+
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" value="Vinayaka" />
+      <br />
+      <br />
+
+      <input type="submit" value="Submit" />
+      <!--type="submit" Displays a clickable button-->
+    </form>
+  </body>
+</html>

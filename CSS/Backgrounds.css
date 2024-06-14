@@ -1,0 +1,18 @@
+body{
+    background-color: aliceblue;
+    width: 70%; /* this will set the elements to occupy 70% of the screen*/
+    margin: auto; /* this will automatically center the elements in the screen*/
+    text-align: center;
+    padding: 20px; /* creates space inside the page or outside of the elements*/
+}
+
+#textColor{
+    border: 1px black solid; /* setting the border with 1px width and color to black and with solid style*/
+    color: blue; /* changes text color to blue*/
+}
+
+#textBackground{
+    border: 1px black solid;
+    background-color: lightcoral; /* changes the background color to lightcoral*/
+}
+

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td {
+        padding: 10px 40px;
+        text-align: center;
+      }
+
+      .Que4 {
+        background-attachment: scroll;
+      }
+      .Que4 th {
+        background-color: rgb(104, 157, 155);
+        color: white;
+      }
+      .Que4 td {
+        background-color: rgb(73, 106, 105);
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      ### Question 1: Nested Tables Create an HTML table that contains another
+      table within one of its cells. The outer table should have 3 rows and 3
+      columns. The nested table should be placed in the middle cell (2nd row,
+      2nd column) and should have 2 rows and 2 columns. Include appropriate
+      headers and data for both tables.
+    </p>
+    <table border="1">
+      Nested Table
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <table border="1">
+            5
+            <tr>
+              <td>5.1</td>
+              <td>5.2</td>
+            </tr>
+            <tr>
+              <td>5.3</td>
+              <td>5.4</td>
+            </tr>
+          </table>
+        </td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <p>
+      ### Question 5: Accessible Table Create an accessible table using HTML5
+      that lists books in a library. The table should have the following
+      columns: "Title", "Author", "Genre", "Year". Ensure that the table is
+      accessible by adding appropriate ARIA attributes and ensuring screen
+      reader compatibility.
+    </p>
+    <table border="1" aria-label="Books in the library">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Year</th>
+      </tr>
+      <tr>
+        <td>Raktha Charithra</td>
+        <td>Ram gopal varma</td>
+        <td>Thriller</td>
+        <td>2000</td>
+      </tr>
+      <tr>
+        <td>Bahubali</td>
+        <td>Rajamouli</td>
+        <td>Adventures</td>
+        <td>2014</td>
+      </tr>
+      <tr>
+        <td>Kalki</td>
+        <td>Nag Ashwin</td>
+        <td>Action</td>
+        <td>2024</td>
+      </tr>
+    </table>
+
+    <p>
+      ### Question 2: Merging Cells Design a table to display a weekly schedule.
+      The table should have columns for each day of the week (Monday to Sunday)
+      and rows for time slots (8 AM to 8 PM). Merge cells to indicate a meeting
+      that spans multiple hours on a specific day. For example, a meeting from 9
+      AM to 11 AM on Wednesday.
+    </p>
+    <table border="1">
+      <tr>
+        <th>-</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+
+      <tr>
+        <th>8 AM - 9 AM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>9 AM - 10 AM</th>
+        <td></td>
+        <td></td>
+        <td rowspan="2">Meeting</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>10 AM - 11 AM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>11 AM - 12 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="3" rowspan="2">Upper Meeting</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>12 PM - 1 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>1 PM - 2 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>2 PM - 3 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>3 PM - 4 PM</th>
+        <td rowspan="2">Discussion</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>4 PM - 5 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>5 PM - 6 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>6 PM - 7 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th>7 PM - 8 PM</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p>
+      ### Question 3: Table with Colspan and Rowspan Create a table that
+      displays sales data for a company. The table should have the following
+      structure: - The first row should have three columns: "Region", "Product",
+      "Sales". - The "Region" column should span two rows. - The "Product"
+      column should span three columns: "Q1", "Q2", "Q3". - The "Sales" column
+      should have normal cells for each product and quarter.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th rowspan="2">Region</th>
+        <th colspan="3">Product</th>
+        <th rowspan="2">Sales</th>
+      </tr>
+
+      <tr>
+        <td>Q1</td>
+        <td>Q2</td>
+        <td>Q3</td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <div class="Que4">
+      <p>
+        ### Question 4: Responsive Table Design a responsive table using HTML5
+        and CSS that displays a list of employees with their details (Name,
+        Position, Office, Age, Start Date, Salary). The table should be
+        scrollable horizontally on small screens. Include headers and at least 5
+        rows of data.
+      </p>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Office</th>
+          <th>Age</th>
+          <th>Start Date</th>
+          <th>Salary</th>
+        </tr>
+        <tr>
+          <td>Likhita</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>25</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+        <tr>
+          <td>Anand</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>26</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+        <tr>
+          <td>Naveen</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>25</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+        <tr>
+          <td>Lokesh</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>25</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+        <tr>
+          <td>Pritvi</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>26</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+        <tr>
+          <td>Anil</td>
+          <td>Software Engineer</td>
+          <td>Lyros Technologies</td>
+          <td>26</td>
+          <td>April 1</td>
+          <td>10k</td>
+        </tr>
+      </table>
+    </div>
+    <p>
+      ### Question 6: Complex Header Table Construct a table that displays
+      student grades with a complex header structure. The table should have two
+      levels of headers. The top level should have "Student Info" and "Grades".
+      "Student Info" should span two columns: "Name" and "ID". "Grades" should
+      span three columns: "Math", "Science", "History".
+    </p>
+    <table border="1">
+      <tr>
+        <th colspan="2">Student Info</th>
+        <th colspan="3">Grades</th>
+      </tr>
+
+      <tr>
+        <th>Name</th>
+        <th>Id.</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>History</th>
+      </tr>
+
+      <tr>
+        <td>Anand</td>
+        <td>123</td>
+        <td>9</td>
+        <td>8</td>
+        <td>7</td>
+      </tr>
+
+      <tr>
+        <td>Suresh</td>
+        <td>124</td>
+        <td>9</td>
+        <td>9</td>
+        <td>6</td>
+      </tr>
+
+      <tr>
+        <td>Ramesh</td>
+        <td>125</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+    </table>
+
+    <p>
+      ### Question 7: Table with Form Elements Create a table that includes form
+      elements for a product order form. The table should have columns for
+      "Product Name", "Quantity", "Price", and "Total". Each row should contain
+      input fields for quantity and total, with the total being calculated based
+      on the quantity and price. Include at least 3 rows of products.
+    </p>
+    <table border="1">
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+
+      <tr>
+        <th>Rice</th>
+        <td><input type="text" /></td>
+        <td>100</td>
+        <td><input type="text" /></td>
+      </tr>
+
+      <tr>
+        <th>Cereals</th>
+        <td><input type="text" /></td>
+        <td>140</td>
+        <td><input type="text" /></td>
+      </tr>
+
+      <tr>
+        <th>Nuts</th>
+        <td><input type="text" /></td>
+        <td>125</td>
+        <td><input type="text" /></td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <p>
+      ### Question 8: Multi-language Table Design a table that supports multiple
+      languages. The table should have two rows of headers, one for English and
+      one for French. The columns should include "Name/Nom", "Age/Âge",
+      "City/Ville", and "Country/Pays". Include at least 5 rows of data.
+    </p>
+
+    <table border="1">
+      <tr>
+        <th rowspan="6">English</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th rowspan="6">French</th>
+        <th>Nom</th>
+        <th>Âge</th>
+        <th>Ville</th>
+        <th>Pays</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

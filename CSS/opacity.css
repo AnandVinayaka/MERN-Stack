@@ -1,9 +1,0 @@
-#image{
-    opacity: 0.5; /*opacity o.5 will make image 50% unclear*/
-}
-
-#image:hover{ /*hovering effect*/
-    opacity: 1.0; /*opacity 1,0 will make image 100% clear*/
-    cursor: pointer; /*when ever cursor is moved on to the image it will change to pointer*/
-}
-  

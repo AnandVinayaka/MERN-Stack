@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  justify-content: center;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  line-height: 2.5;
+  background: radial-gradient(#00ffc3, #00261d);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-osx-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+
+main {
+  max-width: 100rem;
+  margin: auto;
+}
+
+#cars-info, #dealers-data {
+  width: auto;
+  padding: 1rem;
+  border-radius: 6px;
+  background: radial-gradient(#00ffc3, #00382b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin: 10px;
+}
+
+main h2 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3em;
+  margin: 0 0 1.5rem 0;
+  color: #00261d;
+  text-shadow: 2px 2px #ffff;
+  text-decoration: underline;
+}
+
+#cars-info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 11rem;
+  row-gap: 2px;
+  border: 5px solid #0f0f0fce;
+  border-radius: 6px;
+}
+
+#dealers-data ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 10px;
+  border: 5px solid #0f0f0fce;
+  border-radius: 6px;
+}
+
+#cars-info-clicked{
+  display: flex;
+  text-align: center;
+}
+
+#cars-info li, #dealers-data li {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1.2em;
+  width: 10rem;
+  text-align: center;
+  color: #00261d;
+  font-weight: bold;
+  padding: 50px;
+}
+
+#cars-info li img, #dealers-data li img {
+  height: 200px;
+  margin-right: 35px;
+  object-fit: cover;
+}
+
+.dealerBtn{
+  border: 2px solid #030303;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 1em;
+  background:#02e8b2;
+  color: #00261d;
+  
+}
+
+.dealerBtn:hover{
+  background-color: #00c597;
+}
+
+#dealer-content {
+  padding: 1rem;
+  border-radius: 6px;
+  background: radial-gradient(#00ffc3, #00382b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  text-align: center;
+  margin: 10px;
+}
+
+#dealer-content ul{
+  border: 5px solid #0f0f0fce;
+  list-style-type: none;
+}
+
+
+#dealer-content h3 {
+  margin: 0;
+}
